@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comparison Operator</title>
+    <style>
+      html {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <html>
+      <body>
+        <h2>This is study case for Comparison and Logical Operators</h2>
+        <h4>
+          Example 1 : check x using comparison operator is it string or not
+          (return value is true or false)
+        </h4>
+
+        <h2 id="example1"></h2>
+        <hr />
+
+        <h4>
+          Case 1 : check y using comparison operator is it boolean or not
+          (return value is true or false)
+        </h4>
+
+        <h2 id="Case1"></h2>
+        <hr />
+
+        <h4>
+          Case 2 : please inverse value in case 1 using logical operator Not
+        </h4>
+
+        <h2 id="Case2"></h2>
+        <hr />
+
+        <script>
+          //example 1
+          let x = "example";
+          const b = typeof x === "string";
+
+          document.getElementById("example1").innerText = b;
+          // end of example1
+
+          //Case 1
+          // write your code here
+          let y = true;
+          const c = typeof y === "boolean";
+          document.getElementById("Case1").innerText = c;
+          // End of Case 1
+
+          //Case 2
+          // write your code here
+          let d = typeof y !== "boolean";
+          document.getElementById("Case2").innerText = d;
+          // End of Case 1
+        </script>
+      </body>
+    </html>
+  </body>
+</html>
