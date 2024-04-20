@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conditional Branching</title>
+    <style>
+      html {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <html>
+      <body>
+        <h2>This is study case for conditional branching (if else)</h2>
+        <h4>
+          Example : create if statement with condition is true and display the
+          variable value in html
+        </h4>
+
+        <h2 id="example"></h2>
+        <hr />
+
+        <h4>
+          Case 1 : create if...else statement with condition is false and
+          display the variable value in html
+        </h4>
+
+        <h2 id="Case1"></h2>
+        <hr />
+
+        <h4>
+          Case 2 : create check identityCardAllowed if you have age >= 17 using
+          conditional operator and return value is true
+        </h4>
+
+        <h2 id="Case2"></h2>
+        <hr />
+
+        <script>
+          // Example
+          const thisYear = 2022;
+          if (thisYear === 2022) {
+            document.getElementById("example").innerText = thisYear;
+          }
+          // End of Example
+
+          //Case 1
+          // write your code here
+          const nextYear = 2021;
+          if (nextYear === 2022) {
+          } else {
+            document.getElementById("Case1").innerText = nextYear + " is 2023";
+          }
+          // End of Case 1
+
+          //Case 2
+          let age = 20;
+          let identityCardAllowed = 22;
+          if (identityCardAllowed >= 17) {
+            document.getElementById("Case2").innerText = identityCardAllowed;
+          }
+
+          // End of Case 2
+        </script>
+      </body>
+    </html>
+  </body>
+</html>
