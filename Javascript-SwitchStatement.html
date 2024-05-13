@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Statement</title>
+
+    <style>
+        html {
+  text-align: center
+}
+    </style>
+</head>
+<body>
+    <h2>
+        This is study case for conditional branching (if else)
+      </h2>
+      <h4>Example : create switch statment with condition a = number with 2 case option, 
+        <br />with value return for case = 3 is "too Big"
+        <br />with value return for case = 4 is "exactly"
+        <br />and default value return "wrong input"
+      </h4>
+      
+      <h2 id="example"></h2>
+      <hr />
+      
+      <h4>Case 1 : create switch statment for checking with new Date.getDay() 
+        <br />to get return value for case 6 and 0 is "it's weekend"
+        <br />to get retrung value for case 1 until 5 is "it's weekday"
+      </h4>
+    
+      <h2 id="Case1"></h2>
+      <hr />
+
+</body>
+
+<script>
+    // Example 
+let a = 2;
+switch (a) {
+  case 3:
+    document.getElementById("example").innerText = "too Big"
+    break;
+  case 4:
+    document.getElementById("example").innerText = "exactly"
+    break;
+  default:
+    document.getElementById("example").innerText = "wrong input"
+}
+// you can change a with 3 or else to see how case is working
+// End of Example
+
+//Case 1
+// note: day in javascript is start from 0 for sunday, 6 for saturday, there is no number 7 when you use getDay in javascript
+let b = new Date().getDay()
+switch (b) {
+  // write your code here
+    // use 
+  case 1:
+  case 5:
+    document.getElementById("Case1").innerText = "It's Weekday" 
+    break;
+    
+  case 6:
+  case 0:
+    document.getElementById("Case1").innerText = "It's Weekend" 
+    break;
+      // to put your output value in html
+    
+    
+}
+
+// End of Case 1
+
+</script>
+</html>
