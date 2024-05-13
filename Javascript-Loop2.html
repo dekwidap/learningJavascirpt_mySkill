@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>While Loop, Continue, dan For Of - Part 2</title>
+
+    <style>
+      html {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Study case untuk Js Loop Part 2</h2>
+    <h4>
+      Example : Buatlah iterasi / loop menggunakan for loop, <br />dimana i
+      dimulai dari 0, condition yang harus dipenuhi i kurang dari sama dengan 3,
+      dan i selalu bertambah 1 <br />dengan mengembalikan seluruh nilai i pada
+      html
+    </h4>
+
+    <h2 id="example"></h2>
+    <hr />
+
+    <h4>
+      Case 1 : Buatlah iterasi / loop menggunakan do..while loop, <br />dimana i
+      = 0, condition yang harus dipenuh i kurang dari 1 <br />dengan
+      mengembalikan seluruh nilai i pada html
+    </h4>
+
+    <h2 id="Case1"></h2>
+    <hr />
+
+    <h4>
+      Case 2 : Buatlah iterasi / loop menggunakan for loop dengan continue
+      statement, <br />dimana i = 0, condition yang harus dipenuh i kurang dari
+      10, dan nilai i selalu bertambah 1. <br />dengan mengembalikan seluruh
+      nilai i yang bernilai ganjil pada html
+    </h4>
+
+    <h2 id="Case2"></h2>
+    <hr />
+    <script>
+      // Example
+      {
+        for (let i = 0; i <= 3; i++) {
+          document.getElementById("example").innerText += i;
+        }
+      }
+      // expected result = 0123
+      // End of Example
+      {
+        //Case 1
+        // write your code here
+        let i = 0;
+        do {
+          document.getElementById("Case1").innerText += i;
+          i++;
+        } while (i < 1);
+        // expected result = 0
+        // End of Case 1
+      }
+
+      {
+        //Case 2
+        // write your code here
+        for (let i = 0; i < 10; i++) {
+          if (i % 2 == 0) continue;
+
+          document.getElementById("Case2").innerText += i;
+        }
+        // expected result = 13579
+        // End of Case 2
+      }
+    </script>
+  </body>
+</html>
